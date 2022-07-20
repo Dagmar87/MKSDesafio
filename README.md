@@ -46,7 +46,8 @@ Ao finalizar, faça o deploy no lugar que te for mais confortável (exemplo: Ver
 Observação
 ---------------
 
-- Para carregar a lista de produtos precisar usar o JSON Server através desse comando:
+Para carregar a lista de produtos precisar usar o JSON Server através desse comando:
+
 + npm install json-server (se não tiver instalado)
 + json-server --watch data.json
 
