@@ -1,10 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { MdShoppingBasket } from 'react-icons/md';
 import { connect } from 'react-redux';
 import ReturnType from 'typescript';
-import { Container, Carrinho } from './styles';
-import logo from '../../assets/images/logo.svg';
+import { Container, Carrinho, Title } from './styles';
 import { RootState } from '../../store/modules/rootReducer';
 
 const mapStateToProps = (state: RootState) => ({
@@ -14,9 +12,11 @@ const mapStateToProps = (state: RootState) => ({
 function Header({ carrinhoAmount }: ReturnType<typeof mapStateToProps>) {
     return (
         <Container>
-            <Link to="/">
-                <img src={logo} alt="Ecommerce" />
-            </Link>
+            <Title to="/">
+                <div>
+                    <h1>MKS Sistemas</h1>
+                </div>
+            </Title>
             <Carrinho to="/carrinho">
                 <div>
                     <strong>Meu carrinho</strong>
