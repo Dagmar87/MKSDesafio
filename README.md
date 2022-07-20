@@ -42,3 +42,12 @@ Faça o deploy!
 ---------------
 
 Ao finalizar, faça o deploy no lugar que te for mais confortável (exemplo: Vercel, Netlify, Amazon EC2, etc)
+
+Observação
+---------------
+
+- Para carregar a lista de produtos precisar usar o JSON Server através desse comando:
++ npm install json-server (se não tiver instalado)
++ json-server --watch data.json
+
+Com isso aparece a lista de produtos quando for no Vercel ou no localhost.
